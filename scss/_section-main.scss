@@ -1,0 +1,48 @@
+.main {
+    position: relative;
+    min-height: 100vh;
+    background: url(/source/bg.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+    }
+
+    &__body {
+        padding-top: 116px;
+    }
+
+    &__block {
+
+    }
+
+    &__heading {
+        font-weight: 500;
+        font-size: 104px;
+        line-height: 100%;
+        text-transform: uppercase;
+        max-width: 735px;
+        margin-bottom: 20px;
+        span:nth-child(1) {
+            margin-left: 121px;
+        }
+        span:nth-child(2) {
+            // text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255);
+            // -webkit-text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255);
+            // -moz-text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255);
+            // color:rgb(0, 0, 0);
+            text-shadow: 2px 0 2px #000, 
+            0 2px 2px #000, 
+            -2px 0 2px #000, 
+            0 -2px 2px #000;
+            color: rgba($color: #000000, $alpha: 0);
+        }
+    }
+
+    &__descriptions {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        max-width: 140px;
+        margin-left: 170px;
+    }
+}
