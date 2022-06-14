@@ -1,0 +1,78 @@
+.feedback {
+	position: relative;
+	background: $primary-color;
+
+	&__container {}
+
+	&__body {
+		display: flex;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__heading {
+		font-weight: 500;
+		font-size: 58px;
+		line-height: 100%;
+		text-transform: uppercase;
+		padding-top: 140px;
+		margin-bottom: 44px;
+		max-width: 585px;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		margin-bottom: 140px;
+		margin-right: 199px;
+	}
+
+	&__input {
+		height: 60px;
+		width: 476px;
+		border: 1px solid $text;
+		padding: 20px;
+		margin-right: 30px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 100%;
+		color: $text;
+
+		&::placeholder {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 100%;
+		}
+	}
+
+	&__btn {
+		cursor: pointer;
+		height: 60px;
+		width: 139px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 100%;
+		background: linear-gradient(259.45deg, #E88945 0%, #825779 27.08%, #CC4A4E 54.69%, #1684C5 77.6%, #048E92 100%),
+			linear-gradient(0deg, #E88945, #E88945);
+		transition: .5s ease;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	&__image {
+		margin-top: 140px;
+		width: 476px;
+		height: 220px;
+		background: url(/source/feedback.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

@@ -7,36 +7,45 @@ const links = menu_link.querySelectorAll('li');
 var t1 = gsap.timeline({ paused: true });
 
 t1.to(".overlay", {
-    duration: 1.5,
-    x: "0%",
-    ease: 'expo.inOut'
+	duration: 1.5,
+	x: "0%",
+	ease: 'expo.inOut'
 });
 
 t1.to(menu, {
-    duration: 1,
-    width: "100%",
-    ease: 'expo.inOut'
+	duration: 1,
+	width: "100%",
+	ease: 'expo.inOut'
 });
 
 t1.to(links, {
-    duration: 1,
-    opacity: 1,
-    y: 0,
-    stagger: 0.1,
-    ease: 'expo.inOut'
+	duration: 1,
+	opacity: 1,
+	y: 0,
+	stagger: 0.1,
+	ease: 'expo.inOut'
 }, "-=.5");
 
 t1.to(".menu__close", {
-    duration: 1,
-    opacity: 1,
-    y: 0,
-    ease: 'expo.inOut'
+	duration: 1,
+	opacity: 1,
+	y: 0,
+	ease: 'expo.inOut'
 });
 
 btnMenu.addEventListener('click', () => {
-   t1.play()
-})
+	t1.play()
+});
 
 closeMenu.addEventListener('click', () => {
-    t1.reverse()
-})
+	t1.reverse()
+});
+
+
+const ideaSlider = new Swiper('.idea__content', {
+	speed: 600,
+	slidesPerView: 4,
+	autoplay: {
+		delay: 5000,
+	}
+});

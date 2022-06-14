@@ -2,43 +2,62 @@
 @import '_ui';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    a {
-        text-decoration: none;
-        color: $text;
-    }
-    li {
-        list-style: none;
-    }
-    input {
-        font-family: $main-font;
-    }
-    *::placeholder {
-        font-family: $main-font;
-        color: $text;
-    }
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+	a {
+		text-decoration: none;
+		color: $text;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	input {
+		font-family: $main-font;
+		border: none;
+		background: none;
+		outline: none;
+	}
+
+	*::placeholder {
+		font-family: $main-font;
+		color: $text;
+	}
+
+	[type="date"]::-webkit-inner-spin-button {
+		display: none;
+	}
+
+	[type="date"]::-webkit-calendar-picker-indicator {
+		opacity: 0;
+	}
 }
 
 html,
 body {
-    overflow-x: hidden;
-    font-family: $main-font;
-    background: $text;
-    color: $text;
-    font-size: 16px;
-    &::-webkit-scrollbar {
-        width: 0;
-    }
+	overflow-x: hidden;
+	font-family: $main-font;
+	background: $text;
+	color: $text;
+	font-size: 16px;
+
+	&::-webkit-scrollbar {
+		width: 0;
+	}
 }
 
 ._container {
-    max-width: 1320px;
-    margin: 0 auto;
+	max-width: 1320px;
+	margin: 0 auto;
 }
 
 @import '_menu';
 @import '_header';
 @import '_section-main';
+@import '_section-idea';
+@import '_section-feedback';
+@import '_footer';
