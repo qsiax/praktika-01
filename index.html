@@ -12,6 +12,16 @@
 
 <body>
 
+	<div class="overlay-preloader">
+		<div class="overlay-preloader-text-wrapper">
+			<div class="overlay-preloader-text">Growth</div>
+			<div class="overlay-preloader-underline"></div>
+		</div>
+		<div class="overlay-preloader-el01"></div>
+
+
+	</div>
+
 	<div class="overlay">
 		<div class="overlay__el-01"></div>
 	</div>
@@ -67,16 +77,33 @@
 	</header>
 
 	<section class="main">
+		<!--<div class="main__cloud"></div>-->
 		<div class="main__container _container">
 			<div class="main__body">
 				<div class="main__block">
 					<div class="main__heading">
-						<span>Собирайте</span>
-						<span>впечатления</span>
-						<span>сейчас
-							<div class="main__descriptions">Так до 6 км
-								с каждых 60 руб.</div>
-						</span>
+						<h1 id="heading-01">Собирайте</h1>
+						<h1 id="heading-02">впечатления</h1>
+						<h1 id="heading-03">сейчас
+							<div class="main__descriptions-wrapper">
+								<div class="main__descriptions">Так до 6 км
+									с каждых 60 руб.</div>
+							</div>
+						</h1>
+					</div>
+					<div class="main__video">
+						<video src="/source/video.mp4#t=12" autoplay muted loop></video>
+					</div>
+				</div>
+				<div class="main__tabs-wrapper">
+					<div class="main__tabs-item ">
+						<div class="main__tabs-item-wrapper active">Приобрести</div>
+					</div>
+					<div class="main__tabs-item">
+						<div class="main__tabs-item-wrapper">Онлайн регистрация</div>
+					</div>
+					<div class="main__tabs-item">
+						<div class="main__tabs-item-wrapper">Статус рейса</div>
 					</div>
 				</div>
 				<div class="main__bron-wrapper">
@@ -112,6 +139,11 @@
 						<div class="main__bron-btn">Найти</div>
 					</div>
 				</div>
+				<div class="main__result-wrapper">
+					<div class="main__result-text-wrapper">
+						<div class="main__result-text">Ничего не найдено! Попробуйте позже</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -120,55 +152,71 @@
 		<div class="idea__container _container">
 			<div class="idea__body">
 				<div class="idea__block">
-					<div class="idea__heading">Идеи для
+					<div class="idea__heading" data-scroll>Идеи для
 						путешествия</div>
 				</div>
 				<div class="idea__content swiper">
 					<div class="idea__item-wrapper swiper-wrapper">
 						<div class="idea__item swiper-slide">
-							<div class="idea__item-image"></div>
-							<div class="idea__item-text">Если вы не боитесь воды</div>
-							<div class="idea__item-heading">Пляж</div>
+							<div class="idea__item-body">
+								<div class="idea__item-image"></div>
+								<div class="idea__item-text">Если вы не боитесь воды</div>
+								<div class="idea__item-heading">Пляж</div>
+							</div>
 						</div>
 						<div class="idea__item swiper-slide">
-							<div class="idea__item-image"></div>
-							<div class="idea__item-text">Культуры других народов</div>
-							<div class="idea__item-heading">Другой город</div>
+							<div class="idea__item-body">
+								<div class="idea__item-image"></div>
+								<div class="idea__item-text">Культуры других народов</div>
+								<div class="idea__item-heading">Другой город</div>
+							</div>
 						</div>
 						<div class="idea__item swiper-slide">
-							<div class="idea__item-image"></div>
-							<div class="idea__item-text">Если хотите впечатлений</div>
-							<div class="idea__item-heading">Природа
-								(активный отдых)</div>
+							<div class="idea__item-body">
+								<div class="idea__item-image"></div>
+								<div class="idea__item-text">Если хотите впечатлений</div>
+								<div class="idea__item-heading">Природа
+									(активный отдых)</div>
+							</div>
 						</div>
 						<div class="idea__item swiper-slide">
-							<div class="idea__item-image"></div>
-							<div class="idea__item-text">Простой отдых</div>
-							<div class="idea__item-heading">Природа
-								(расслабляющий отдых)</div>
+							<div class="idea__item-body">
+								<div class="idea__item-image"></div>
+								<div class="idea__item-text">Простой отдых</div>
+								<div class="idea__item-heading">Природа
+									(расслабляющий отдых)</div>
+							</div>
 						</div>
 
 						<div class="idea__item swiper-slide">
-							<div class="idea__item-image"></div>
-							<div class="idea__item-text">Если вы не боитесь воды</div>
-							<div class="idea__item-heading">Пляж</div>
+							<div class="idea__item-body">
+								<div class="idea__item-image"></div>
+								<div class="idea__item-text">Если вы не боитесь воды</div>
+								<div class="idea__item-heading">Пляж</div>
+							</div>
 						</div>
 						<div class="idea__item swiper-slide">
-							<div class="idea__item-image"></div>
-							<div class="idea__item-text">Культуры других народов</div>
-							<div class="idea__item-heading">Другой город</div>
+							<div class="idea__item-body">
+								<div class="idea__item-image"></div>
+								<div class="idea__item-text">Культуры других народов</div>
+								<div class="idea__item-heading">Другой город</div>
+							</div>
 						</div>
 						<div class="idea__item swiper-slide">
-							<div class="idea__item-image"></div>
-							<div class="idea__item-text">Если хотите впечатлений</div>
-							<div class="idea__item-heading">Природа
-								(активный отдых)</div>
+							<div class="idea__item-body">
+								<div class="idea__item-image"></div>
+								<div class="idea__item-text">Если хотите впечатлений</div>
+								<div class="idea__item-heading">Природа
+									(активный отдых)</div>
+							</div>
 						</div>
 						<div class="idea__item swiper-slide">
-							<div class="idea__item-image"></div>
-							<div class="idea__item-text">Простой отдых</div>
-							<div class="idea__item-heading">Природа
-								(расслабляющий отдых)</div>
+							<div class="idea__item-body">
+								<div class="idea__item-image"></div>
+								<div class="idea__item-text">Простой отдых</div>
+								<div class="idea__item-heading">Природа
+									(расслабляющий отдых)</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -180,15 +228,19 @@
 		<div class="feedback__container _container">
 			<div class="feedback__body">
 				<div class="feedback__block">
-					<div class="feedback__heading">присоединяйтесь
-						к нашей рассылке</div>
+					<div class="feedback__heading-wrapper">
+						<div class="feedback__heading">присоединяйтесь
+							к нашей рассылке</div>
+					</div>
 					<div class="feedback__content">
 						<input class="feedback__input" placeholder="Ваша почта"></input>
 						<div class="feedback__btn">Подписаться</div>
 					</div>
 				</div>
 				<div class="feedback__block">
-					<div class="feedback__image"></div>
+					<div class="feedback__image-wrapper">
+						<div class="feedback__image"></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -235,10 +287,12 @@
 		</div>
 	</footer>
 
-
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
 		integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+		integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="/js/main.js"></script>
 

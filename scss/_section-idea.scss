@@ -1,5 +1,8 @@
 .idea {
+	position: relative;
 	background: $main-color;
+	margin-top: 100vh;
+	z-index: 10;
 
 	&__container {}
 
@@ -26,10 +29,19 @@
 		display: flex;
 	}
 
+	&__item-body {
+		transform: translateY(-600px);
+	}
+
 	&__item {
 		display: flex;
 		flex-direction: column;
 		position: relative;
+		overflow: hidden;
+
+		&:hover .idea__item-image {
+			transform: scale(1.02);
+		}
 
 		&:hover::before {
 			width: 95%;
@@ -136,6 +148,7 @@
 
 	&__item-image {
 		margin-bottom: 20px;
+		transition: .8s ease;
 	}
 
 	&__item-text {
